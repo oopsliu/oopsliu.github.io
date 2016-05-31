@@ -3,21 +3,54 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Hexo多台机器同步 | OOPSLIU</title>
+    <title>Hexo备忘录3 -- 多机同步 | OOPSLIU</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
         <meta name="keywords" content="Hexo,git" />
     
-    <meta name="description">
+    <meta name="description" content="公司和家里两台电脑的情况下（或者重装系统后）同步hexo的问题，经过亲测决定采用以下方式：
+
+
+node包和hexo等环境在两台机器上都手动配好（包括主题），不会经常变动；
+
+
+
+经常更新的博客内容文件夹source放到github上托管，方便从不同机器上pull/push；
+
+
+
+hexo配置文件和主题配置文件不会经常更新，但是重新配置也有点麻烦，所以放到onedrive上备份，需要重新安装的时">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo多台机器同步">
+<meta property="og:title" content="Hexo备忘录3 -- 多机同步">
 <meta property="og:url" content="http://oopsliu.github.io/2016/05/31/hexosync/index.html">
 <meta property="og:site_name" content="OOPSLIU">
-<meta property="og:description">
-<meta property="og:updated_time" content="2016-05-31T02:36:31.793Z">
+<meta property="og:description" content="公司和家里两台电脑的情况下（或者重装系统后）同步hexo的问题，经过亲测决定采用以下方式：
+
+
+node包和hexo等环境在两台机器上都手动配好（包括主题），不会经常变动；
+
+
+
+经常更新的博客内容文件夹source放到github上托管，方便从不同机器上pull/push；
+
+
+
+hexo配置文件和主题配置文件不会经常更新，但是重新配置也有点麻烦，所以放到onedrive上备份，需要重新安装的时">
+<meta property="og:updated_time" content="2016-05-31T02:54:00.535Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo多台机器同步">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Hexo备忘录3 -- 多机同步">
+<meta name="twitter:description" content="公司和家里两台电脑的情况下（或者重装系统后）同步hexo的问题，经过亲测决定采用以下方式：
+
+
+node包和hexo等环境在两台机器上都手动配好（包括主题），不会经常变动；
+
+
+
+经常更新的博客内容文件夹source放到github上托管，方便从不同机器上pull/push；
+
+
+
+hexo配置文件和主题配置文件不会经常更新，但是重新配置也有点麻烦，所以放到onedrive上备份，需要重新安装的时">
     
 
     
@@ -136,7 +169,7 @@ _st('install','v69sgvBSK3QqFhG6-fGx','2.0.0');
                 
     
         <h1 class="article-title" itemprop="name">
-        Hexo多台机器同步
+        Hexo备忘录3 -- 多机同步
         </h1>
     
 
@@ -151,7 +184,31 @@ _st('install','v69sgvBSK3QqFhG6-fGx','2.0.0');
 
         </div>
         <div class="article-entry" itemprop="articleBody">
-            
+            <p>公司和家里两台电脑的情况下（或者重装系统后）同步hexo的问题，经过亲测决定采用以下方式：</p>
+<ul>
+<li><ol>
+<li>node包和hexo等环境在两台机器上都手动配好（包括主题），不会经常变动；</li>
+</ol>
+</li>
+<li><ol>
+<li>经常更新的博客内容文件夹source放到github上托管，方便从不同机器上pull/push；</li>
+</ol>
+</li>
+<li><ol>
+<li>hexo配置文件和主题配置文件不会经常更新，但是重新配置也有点麻烦，所以放到onedrive上备份，需要重新安装的时候可以直接使用；</li>
+</ol>
+</li>
+</ul>
+<p>试过整个hexo文件夹放到onedrive里，一是慢二是貌似posts的日期改了，所以评论都没有了。其他网盘基本都死掉了，百度云毫无理由的就是不！喜！欢！坚果云免费版流量太小，整体同步不够用，而且在准备开发者大会的时候出现了由于流量不够同步没成功，把ppt搞坏了！坑爹，果断删。</p>
+<p>具体更新步骤怕忘记录一下：</p>
+<ol>
+<li>在hexo source下添加新文件后，git add . </li>
+<li>git commit -m “commit what了”</li>
+<li>git push origin master到云端的repo上</li>
+<li>hexo g, hexo d</li>
+<li>另一台机器同步的时候把云端的先pull下来，更新后再重复1-4提交到云端</li>
+</ol>
+
         </div>
         <footer class="article-footer">
             
@@ -216,7 +273,7 @@ _st('install','v69sgvBSK3QqFhG6-fGx','2.0.0');
     <section id="comments">
     
         
-    <div class="ds-thread" data-thread-key="2016/05/31/hexosync/" data-title="Hexo多台机器同步" data-url="http://oopsliu.github.io/2016/05/31/hexosync/"></div>
+    <div class="ds-thread" data-thread-key="2016/05/31/hexosync/" data-title="Hexo备忘录3 -- 多机同步" data-url="http://oopsliu.github.io/2016/05/31/hexosync/"></div>
     <style>
         #ds-thread #ds-reset .ds-textarea-wrapper {
             background: none;
@@ -321,7 +378,7 @@ _st('install','v69sgvBSK3QqFhG6-fGx','2.0.0');
                         
                         <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Technology/">Technology</a></p>
-                            <p class="item-title"><a href="/2016/05/31/hexosync/" class="title">Hexo多台机器同步</a></p>
+                            <p class="item-title"><a href="/2016/05/31/hexosync/" class="title">Hexo备忘录3 -- 多机同步</a></p>
                             <p class="item-date"><time datetime="2016-05-31T02:35:15.000Z" itemprop="datePublished">2016-05-31</time></p>
                         </div>
                     </li>
