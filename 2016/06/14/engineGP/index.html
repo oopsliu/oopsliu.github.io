@@ -4,18 +4,27 @@
     <meta charset="utf-8">
 	<meta name="baidu-site-verification" content="R458BrzQ29" />
     
-    <title>标签：: 主题 | OOPSLIU</title>
+    <title>ArcGIS Engine中调用地理处理工具（gp工具）的方法与注意事项 | OOPSLIU</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="OOPSLIU">
-<meta property="og:url" content="http://oopsliu.github.io/tags/主题/index.html">
+        <meta name="keywords" content="ArcGIS,Engine" />
+    
+    <meta name="description" content="(以10.3版本下使用C#调用系统工具为例)
+1. 在程序中调用gp是否需要安装Desktop软件？不用安装Desktop软件，安装ArcGIS Engine运行时以后就可以调用gp工具。  
+2. 如何查看gp工具的许可级别？可以直接在Desktop的帮助文档中定位到该工具的帮助页面，或者在Desktop软件中开启gp工具的执行页面，点击右下角的“tool help”按钮，也会弹出该工具的帮助页">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ArcGIS Engine中调用地理处理工具（gp工具）的方法与注意事项">
+<meta property="og:url" content="http://oopsliu.github.io/2016/06/14/engineGP/index.html">
 <meta property="og:site_name" content="OOPSLIU">
-<meta property="og:description">
+<meta property="og:description" content="(以10.3版本下使用C#调用系统工具为例)
+1. 在程序中调用gp是否需要安装Desktop软件？不用安装Desktop软件，安装ArcGIS Engine运行时以后就可以调用gp工具。  
+2. 如何查看gp工具的许可级别？可以直接在Desktop的帮助文档中定位到该工具的帮助页面，或者在Desktop软件中开启gp工具的执行页面，点击右下角的“tool help”按钮，也会弹出该工具的帮助页">
+<meta property="og:updated_time" content="2016-06-14T08:55:51.895Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="OOPSLIU">
-<meta name="twitter:description">
+<meta name="twitter:title" content="ArcGIS Engine中调用地理处理工具（gp工具）的方法与注意事项">
+<meta name="twitter:description" content="(以10.3版本下使用C#调用系统工具为例)
+1. 在程序中调用gp是否需要安装Desktop软件？不用安装Desktop软件，安装ArcGIS Engine运行时以后就可以调用gp工具。  
+2. 如何查看gp工具的许可级别？可以直接在Desktop的帮助文档中定位到该工具的帮助页面，或者在Desktop软件中开启gp工具的执行页面，点击右下角的“tool help”按钮，也会弹出该工具的帮助页">
     
 
     
@@ -106,75 +115,172 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-tag"></i>标签：: <em>主题</em>
+    <a class="page-title-link" href="/categories/Technology/">Technology</a>
     </h1>
 </div>
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-engineGP" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2016" class="archive-year"><i class="icon fa fa-calendar-o"></i>2016</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2016/03/23/hexotheme/" class="thumbnail">
-    
-    
-        <span style="background-image:url(http://i.imgur.com/0LuC2Sw.png)" alt="Hexo备忘录2 -- 主题theme" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="ds-thread-count" data-thread-key="2016/03/23/hexotheme/">0</span>
-    
-</span>
-
-    
-</a>
-        
-        <div class="article-meta">
-            <p class="category">
-            <a class="article-category-link" href="/categories/Technology/">Technology</a>
-            </p>
-            <p class="date"><time datetime="2016-03-23T07:48:12.000Z" itemprop="datePublished">2016-03-23</time></p>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2016/03/23/hexotheme/">Hexo备忘录2 -- 主题theme</a>
+        ArcGIS Engine中调用地理处理工具（gp工具）的方法与注意事项
         </h1>
     
 
-        <p class="article-excerpt">
-            对外协来说，内容什么的都是浮云，赶紧改个主题才是正经事！
-Clone Theme在官网上相中了Hueman主题，先用clone命令导到本地来：
-git clone https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman
-在克隆过来的hueman文件夹里，把主题的配置文件_config.yml.example后缀example去
-        </p>
+            </header>
+        
+        <div class="article-subtitle">
+            <a href="/2016/06/14/engineGP/" class="article-date">
+    <time datetime="2016-06-14T08:49:06.000Z" itemprop="datePublished">2016-06-14</time>
+</a>
+            
+    <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ArcGIS/">ArcGIS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Engine/">Engine</a></li></ul>
+
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <p>(以10.3版本下使用C#调用系统工具为例)</p>
+<h1 id="1-在程序中调用gp是否需要安装Desktop软件？"><a href="#1-在程序中调用gp是否需要安装Desktop软件？" class="headerlink" title="1. 在程序中调用gp是否需要安装Desktop软件？"></a>1. 在程序中调用gp是否需要安装Desktop软件？</h1><p>不用安装Desktop软件，安装ArcGIS Engine运行时以后就可以调用gp工具。  </p>
+<h1 id="2-如何查看gp工具的许可级别？"><a href="#2-如何查看gp工具的许可级别？" class="headerlink" title="2. 如何查看gp工具的许可级别？"></a>2. 如何查看gp工具的许可级别？</h1><p>可以直接在Desktop的帮助文档中定位到该工具的帮助页面，或者在Desktop软件中开启gp工具的执行页面，点击右下角的“tool help”按钮，也会弹出该工具的帮助页面。在帮助中，每个工具的许可级别都在页面的最上方的“License level”处标示出来。Desktop许可的Basic级别与esriLicenseProductCodeEngine许可相对应，Desktop许可的Standard级别与esriLicenseProductCodeEngineGeoDB相对应，而engine程序无法使用只有Desktop Advanced级别许可才能用的gp工具。  </p>
+<h1 id="3-如何通过代码调用gp工具？"><a href="#3-如何通过代码调用gp工具？" class="headerlink" title="3. 如何通过代码调用gp工具？"></a>3. 如何通过代码调用gp工具？</h1><p>engine程序调用gp工具时使用的是相同的框架，只需要改变其中的具体的工具及参数即可，基本的框架可以使用以下代码：  </p>
+<pre><code>public void RunGP()  
+{  
+Geoprocessor gp = new Geoprocessor { OverwriteOutput = true };  
+try  
+{  
+ESRI.ArcGIS.AnalysisTools.Buffer tool = new ESRI.ArcGIS.AnalysisTools.Buffer();  
+tool.in_features = @&quot;D:\in.shp&quot;;  
+tool.out_feature_class = @&quot;D:\out.shp&quot;;  
+tool.buffer_distance_or_field = &quot;10&quot;;  
+IGeoProcessorResult2 result = gp.Execute(tool, null) as IGeoProcessorResult2;  
+}  
+catch (Exception ex)  
+{  
+MessageBox.Show(ex.Message, &quot;GP Error&quot;);  
+}  
+finally  
+{  
+System.Text.StringBuilder sb = new System.Text.StringBuilder();  
+for (int i = 0; i &lt; gp.MessageCount; i++)  
+sb.AppendLine(gp.GetMessage(i));  
+if (sb.Capacity &gt; 0) MessageBox.Show(sb.ToString(), &quot;GP Messages&quot;);  
+}  
+} 
+</code></pre><p>代码中调用的是Buffer工具，如果要调用其他工具的话只需替换成对应的工具并按工具要求填写参数即可。  </p>
+<h1 id="4-不知道参数如何填写怎么办？"><a href="#4-不知道参数如何填写怎么办？" class="headerlink" title="4. 不知道参数如何填写怎么办？"></a>4. 不知道参数如何填写怎么办？</h1><p>可以先在Desktop中使用想要的参数执行gp成功，然后在菜单栏–&gt;geoprocessing–&gt;results中打开results窗口，查看刚才执行成功的gp历史，在inputs项中查看或直接复制各参数的填写方式到代码中即可。  </p>
+<h1 id="5-可以使用AO对象如IFeatureClass作为gp工具的参数吗？"><a href="#5-可以使用AO对象如IFeatureClass作为gp工具的参数吗？" class="headerlink" title="5. 可以使用AO对象如IFeatureClass作为gp工具的参数吗？"></a>5. 可以使用AO对象如IFeatureClass作为gp工具的参数吗？</h1><p>强烈建议不要用AO对象作为gp参数，而使用硬盘上的绝对路径或字符串作为参数。只有极少数工具可以接收AO对象作为参数，但是官方并没有公布是哪些工具，所以为了避免执行失败，最好都用绝对路径。  </p>
+<h1 id="6-SDE中的数据作为参数的话如何填写？"><a href="#6-SDE中的数据作为参数的话如何填写？" class="headerlink" title="6. SDE中的数据作为参数的话如何填写？"></a>6. SDE中的数据作为参数的话如何填写？</h1><p>填写 .sde结尾的SDE连接文件的绝对路径作为参数，如“D:\connection to oracle.sde\SDE.myFeatureClass”。如果已经通过Desktop成功连接过SDE的话，那么会默认创建一个.sde连接文件，如C:\Users\Administrator\AppData\Roaming\ESRI\Desktop10.3\ArcCatalog\Connection tooracle.sde，<br>如果没有连接过的话，可以通过IWorkspaceFactory.Create()或gp工具Create ArcSDE Connection File来创建。  </p>
+<h1 id="7-执行失败怎么办？"><a href="#7-执行失败怎么办？" class="headerlink" title="7. 执行失败怎么办？"></a>7. 执行失败怎么办？</h1><p>如上面的示例代码中的方式，把执行gp的语句放进try-catch-finally的结构体中，并用IGeoProcessor.GetMessage尝试获取具体的报错信息，如许可级别不够、参数填写错误等。  </p>
+<h1 id="8-关于在engine中调用gp是否有官方帮助文档？"><a href="#8-关于在engine中调用gp是否有官方帮助文档？" class="headerlink" title="8. 关于在engine中调用gp是否有官方帮助文档？"></a>8. 关于在engine中调用gp是否有官方帮助文档？</h1><p>有，10.3版本在线帮助地址：<br><a href="http://resources.arcgis.com/en/help/arcobjects-net/conceptualhelp/#/Using_geoprocessing/0001000004mm000000/" target="_blank" rel="external">http://resources.arcgis.com/en/help/arcobjects-net/conceptualhelp/#/Using_geoprocessing/0001000004mm000000/</a>  </p>
+<p>调用自定义gp工具、gp服务、和其他高级技能都可以参考官方帮助文档。 </p>
+
+        </div>
+        <footer class="article-footer">
+            
+    <div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_qzone">QQ空间</a>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_tqq">腾讯微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+    <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<style>
+    .jiathis_style div:first-child:not(.jiadiv_01) {
+        width: auto !important;
+        border: none !important;
+    }
+    .jiathis_style .jiadiv_01 {
+        margin: 10px 0;
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .jiathis_style .jiadiv_01 div:first-child {
+        display: none;
+    }
+    .jiathis_style .jiadiv_02 {
+        padding: 7px 0 !important;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle {
+        width: 85px;
+        border: none;
+        height: auto;
+        margin: 3px 10px;
+        padding: 6px 10px;
+        border-radius: 4px;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:hover {
+        border: none;
+    }
+    .jiathis_style .jiadiv_02 .jiatitle:nth-child(even) {
+        margin-left: 0;
+    }
+    .jiathis_style .jtico:hover {
+        opacity: 1;
+    }
+    .jiathis_style .ckepopBottom,
+    .jiathis_style .centerBottom {
+        width: auto !important;
+        padding: 5px;
+        background: #f7f7f7;
+    }
+</style>
+
+
+
+
+        </footer>
     </div>
 </article>
+
+    <section id="comments">
     
-        </div>
+        
+    <div class="ds-thread" data-thread-key="2016/06/14/engineGP/" data-title="ArcGIS Engine中调用地理处理工具（gp工具）的方法与注意事项" data-url="http://oopsliu.github.io/2016/06/14/engineGP/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
+
     
-
-
-    </div></section>
-
-
+    </section>
 
                         </div>
                     </section>
@@ -202,6 +308,19 @@ git clone https://github.com/ppoffice/hexo-theme-hueman.git themes/hueman
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2016/06/01/dev2016/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">ArcGIS性能调优</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
